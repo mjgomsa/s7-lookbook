@@ -1,0 +1,22 @@
+{
+  "name": "s7-lookbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjgomsa/s7-lookbook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjgomsa/s7-lookbook/issues"
+  },
+  "homepage": "https://github.com/mjgomsa/s7-lookbook#readme",
+  "dependencies": {
+    "jspdf": "^2.5.1"
+  }
+}

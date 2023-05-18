@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>S7 Lookbook Generator</title>
-    <!-- <link rel="stylesheet" type="text/css" href="./src/css/style.css" /> -->
+    <title>Generate PDF</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
   </head>
-
   <body>
-    <h1>S7 Lookbook Generator</h1>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script type="module" src="./src/js/main.js"></script>
+    <h1>Generate PDF</h1>
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" />
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" />
+
+    <button id="generatePDF">Generate PDF</button>
+
+    <script src="./src/js/jspdf.min.js"></script>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>

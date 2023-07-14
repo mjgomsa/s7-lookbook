@@ -141,44 +141,19 @@ async function generatePdf(imageUrls) {
     bird.height / 35
   );
 
-  //Page 4
-  doc.addPage("l");
-  // const image4 = await addImageProcess(imageUrls[1]);
-  // doc.addImage(image4, "png", 5, 5, 0, 0);
-  doc.addImage(
-    bird,
-    "png",
-    doc.internal.pageSize.width / 2 - 5,
-    doc.internal.pageSize.height / 2 + 130,
-    bird.width / 35,
-    bird.height / 35
-  );
-
-  //Page 5
-  doc.addPage("l");
-  // const image4 = await addImageProcess(imageUrls[1]);
-  // doc.addImage(image4, "png", 5, 5, 0, 0);
-  doc.addImage(
-    bird,
-    "png",
-    doc.internal.pageSize.width / 2 - 5,
-    doc.internal.pageSize.height / 2 + 130,
-    bird.width / 35,
-    bird.height / 35
-  );
-
-  //Page 6
-  doc.addPage("l");
-  // const image4 = await addImageProcess(imageUrls[1]);
-  // doc.addImage(image4, "png", 5, 5, 0, 0);
-  doc.addImage(
-    bird,
-    "png",
-    doc.internal.pageSize.width / 2 - 5,
-    doc.internal.pageSize.height / 2 + 130,
-    bird.width / 35,
-    bird.height / 35
-  );
+  for (i = 0; i < 3; i++) {
+    doc.addPage("l");
+    // const image4 = await addImageProcess(imageUrls[1]);
+    // doc.addImage(image4, "png", 5, 5, 0, 0);
+    doc.addImage(
+      bird,
+      "png",
+      doc.internal.pageSize.width / 2 - 5,
+      doc.internal.pageSize.height / 2 + 130,
+      bird.width / 35,
+      bird.height / 35
+    );
+  }
 
   //Page 7
   doc.addPage("p");

@@ -5,30 +5,35 @@
     <link rel="stylesheet" type="text/css" href="./src/css/styles.css" />
   </head>
   <body>
-    <h1>Generate PDF</h1>
+    <div id="app">
+      <div>
+        <h1>Generate PDF</h1>
+            <h2>Client</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" />
+        
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" />
+        
+            <br /><br />
+        
+            <h2>S7 Contact Person</h2>
+            <label for="contFname">Contact First Name:</label>
+            <input type="text" id="contFname" />
+        
+            <label for="contLname">Contact Last Name:</label>
+            <input type="text" id="contLname" />
+            <br />
+            <label for="contEmail">Contact email:</label>
+            <input type="text" id="contEmail" />
+            <br />
+            <label for="month">Month:</label>
+            <input type="text" id="month" />
+        <div id="container">
+        </div>
+    </div>
 
-    <h2>Client</h2>
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" />
-
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" />
-
-    <br /><br />
-
-    <h2>S7 Contact Person</h2>
-    <label for="contFname">Contact First Name:</label>
-    <input type="text" id="contFname" />
-
-    <label for="contLname">Contact Last Name:</label>
-    <input type="text" id="contLname" />
-    <br />
-    <label for="contEmail">Contact email:</label>
-    <input type="text" id="contEmail" />
-    <br /><br /><br />
-    <button id="generate">Generate PDF</button>
-
-    <script src="./src/js/jspdf.min.js"></script>
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/jspdf.min.js"></script>
   </body>
 </html>

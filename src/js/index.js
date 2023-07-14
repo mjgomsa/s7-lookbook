@@ -239,6 +239,6 @@ function buttonClick() {
 }
 
 var btn = document.createElement("BUTTON");
-btn.innerHTML = "Save PDF";
+btn.innerHTML = "Generate PDF";
 btn.onclick = () => buttonClick();
 document.getElementById("container").appendChild(btn);
